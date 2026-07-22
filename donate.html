@@ -1,73 +1,13 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Донат — ParaVerX</title>
-<link rel="stylesheet" href="assets/style.css">
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-</head>
-<body data-page="donate">
-<div class="particles" id="particles"></div>
-
-<nav class="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="logo"><span class="gem">◆</span> ParaVerX</a>
-    <ul class="nav-menu">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="register.html">Регистрация</a></li>
-      <li><a href="profile.html">Кабинет</a></li>
-      <li><a href="donate.html" class="active">Донат</a></li>
-      <li><a href="rules.html">Правила</a></li>
-      <li><a href="admin.html">Админка</a></li>
-    </ul>
-  </div>
-</nav>
-
-<main>
-  <div class="form-wrap">
-    <div class="form-card" style="max-width:600px;">
-      <h2>Поддержать проект</h2>
-      <p class="sub">Выберите услугу для активации на вашем аккаунте.</p>
-      
-      <div class="tariffs" id="tariffs">
-        <div class="tariff" data-tariff="pass_30" onclick="selectTariff(this)">
-          <h4>Проходка 30 дней</h4>
-          <div class="price">150 ₴</div>
-          <ul><li>Полный доступ к серверу</li><li>Приоритетный вход</li></ul>
-        </div>
-        <div class="tariff" data-tariff="pass_90" onclick="selectTariff(this)">
-          <span class="badge">Выгодно</span>
-          <h4>Проходка 90 дней</h4>
-          <div class="price">380 ₴</div>
-          <ul><li>Экономия 15%</li><li>Приоритетный вход</li></ul>
-        </div>
-        <div class="tariff" data-tariff="unban" onclick="selectTariff(this)">
-          <h4>Разбан</h4>
-          <div class="price">100 ₴</div>
-          <ul><li>Снятие блокировки</li><li>Моментальная активация</li></ul>
-        </div>
-        <div class="tariff" data-tariff="prefix" onclick="selectTariff(this)">
-          <h4>VIP Префикс</h4>
-          <div class="price">250 ₴</div>
-          <ul><li>Уникальный префикс [VIP]</li><li>Цветной ник в TAB</li></ul>
-        </div>
-      </div>
-      
-      <div class="field">
-        <label for="donate-nick">Ваш игровой никнейм</label>
-        <input type="text" id="donate-nick" placeholder="Например: Steve" autocomplete="off" maxlength="16">
-      </div>
-      
-      <button class="btn btn-primary full" id="donate-btn" onclick="doDonate()">Перейти к оплате</button>
-      <div class="result" id="donate-result"></div>
-    </div>
-  </div>
-</main>
-
-<footer class="footer">
-  <div class="copy">© 2026 ParaVerX. Все права защищены.</div>
-</footer>
-<script src="assets/script.js"></script>
-</body>
-</html>
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Донат — ParaVerX</title><link rel="stylesheet" href="assets/style.css"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script></head>
+<body data-page="donate"><div class="particles" id="particles"></div>
+<nav class="navbar"><div class="nav-inner"><a href="index.html" class="logo"><span class="gem">◆</span> ParaVerX</a><div id="nav-links" class="nav-menu"></div></div></nav>
+<main><div class="form-wrap"><div class="form-card" style="max-width:620px"><h2>Поддержать проект</h2><p class="sub">Выберите услугу для активации на аккаунте.</p>
+<div class="tariffs">
+<div class="tariff" data-tariff="pass_30" onclick="selectTariff(this)"><h4>Проходка 30 дней</h4><div class="price">150 ₴</div><ul><li>Полный доступ</li><li>Приоритет входа</li></ul></div>
+<div class="tariff" data-tariff="pass_90" onclick="selectTariff(this)"><span class="badge">Выгодно</span><h4>Проходка 90 дней</h4><div class="price">380 ₴</div><ul><li>Экономия 15%</li><li>Приоритет входа</li></ul></div>
+<div class="tariff" data-tariff="unban" onclick="selectTariff(this)"><h4>Разбан</h4><div class="price">100 ₴</div><ul><li>Снятие блокировки</li><li>Моментально</li></ul></div>
+<div class="tariff" data-tariff="prefix" onclick="selectTariff(this)"><h4>VIP Префикс</h4><div class="price">250 ₴</div><ul><li>Префикс [VIP]</li><li>Цветной TAB</li></ul></div>
+</div>
+<div class="field"><label>Ваш никнейм</label><input id="donate-nick" placeholder="Например: Steve" maxlength="16"></div>
+<button class="btn btn-primary full" id="donate-btn" onclick="doDonate()">Перейти к оплате</button><div class="result" id="donate-result"></div></div></div></main>
+<footer class="footer"><div class="copy">© 2026 ParaVerX.</div></footer><script src="assets/script.js"></script></body></html>
