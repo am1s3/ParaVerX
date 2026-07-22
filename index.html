@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ParaVerX — мир, где мифы оживают</title>
+<title>ParaVerX — Уникальный Minecraft проект</title>
 <link rel="stylesheet" href="assets/style.css">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
@@ -14,106 +14,81 @@
   <div class="nav-inner">
     <a href="index.html" class="logo"><span class="gem">◆</span> ParaVerX</a>
     <ul class="nav-menu">
-      <li><a href="index.html" data-page="home">Главная</a></li>
-      <li><a href="register.html" data-page="register">Регистрация</a></li>
-      <li><a href="profile.html" data-page="profile">Кабинет</a></li>
-      <li><a href="donate.html" data-page="donate">Донат</a></li>
-      <li><a href="rules.html" data-page="rules">Правила</a></li>
-      <li><a href="admin.html" data-page="admin">Админка</a></li>
+      <li><a href="index.html" class="active">Главная</a></li>
+      <li><a href="register.html">Регистрация</a></li>
+      <li><a href="profile.html">Кабинет</a></li>
+      <li><a href="donate.html">Донат</a></li>
+      <li><a href="rules.html">Правила</a></li>
+      <li><a href="admin.html">Админка</a></li>
     </ul>
   </div>
 </nav>
 
 <main>
   <div class="hero">
-    <div class="hero-bg"></div><div class="hero-fade"></div>
-    <h1>МИР, ГДЕ МИФЫ ОЖИВАЮТ</h1>
-    <p class="tag">ParaVerX — легендарный Minecraft-проект, пропитанный мистикой, тайнами и забытыми сущностями из параллельной реальности.</p>
+    <div class="hero-bg"></div>
+    <div class="hero-fade"></div>
+    <h1>Мир, где мифы оживают</h1>
+    <p class="tag">ParaVerX — это не просто сервер. Это уникальная экосистема с продвинутой системой авторизации, редкими мифическими сущностями и стабильной работой 24/7.</p>
+    
     <div class="ip-card">
-      <span class="lbl">IP СЕРВЕРА</span>
+      <span class="lbl">Адрес сервера</span>
       <div class="ip-row">
-        <span class="ip">driver-clicking.gl.joinmc.link:25565</span>
-        <button class="btn sm" id="copyBtn" onclick="copyIP()">COPY</button>
+        <span class="ip">planning-mongolia.gl.joinmc.link:25565</span>
+        <button class="btn btn-secondary sm" id="copyBtn" onclick="copyIP()">Copy</button>
       </div>
-      <span class="online"><span class="dot"></span> <strong id="onlineCount">128</strong>&nbsp;игроков онлайн</span>
+      <div class="server-status">
+        <span id="server-status"><span class="dot offline"></span> Загрузка...</span>
+        <span style="color:var(--text-muted)">•</span>
+        <span><strong id="online-count">-</strong> игроков онлайн</span>
+      </div>
     </div>
-    <div class="cta">
-      <a href="register.html" class="btn">РЕГИСТРАЦИЯ</a>
-      <a href="donate.html" class="btn ghost">ПОДДЕРЖАТЬ</a>
+    
+    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+      <a href="register.html" class="btn btn-primary">Начать играть</a>
+      <a href="donate.html" class="btn btn-secondary">Поддержать проект</a>
     </div>
   </div>
 
   <div class="wrap">
     <div class="section">
-      <div class="stats">
-        <div class="panel stat"><span class="num">12480+</span><span class="lbl">Игроков за всё время</span></div>
-        <div class="panel stat"><span class="num">37</span><span class="lbl">Мифов обнаружено</span></div>
-        <div class="panel stat"><span class="num">4</span><span class="lbl">Года проекту</span></div>
-        <div class="panel stat"><span class="num">99.9%</span><span class="lbl">Аптайм сервера</span></div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title"><span class="deco">◆</span>О ПРОЕКТЕ<span class="deco">◆</span></h2>
-      <div class="panel feature">
-        <img class="f-img" src="https://image.qwenlm.ai/public_source/c8f4ab7f-6650-42a8-ad1e-c9273a599f5b/12803aa94-e457-454d-91bb-e0225550c25b.png" alt="Светящийся аметист">
-        <div class="f-text">
-          <h3>Уникальная мистика</h3>
-          <p>ParaVerX — это не просто сервер. Это целая вселенная, вдохновлённая <strong>мифами и мистикой Minecraft</strong>. Здесь обитают самые разные загадочные персонажи — от классических легенд до особенных, редких и по-настоящему опасных сущностей.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <span class="icon">🛡️</span>
+          <h3>Надежная защита</h3>
+          <p>Продвинутая система привязки аккаунтов и двухфакторная аутентификация через сайт. Никаких взломов и гриферства.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">👁️</span>
+          <h3>Уникальные мифы</h3>
+          <p>Система скрытых персонажей с кастомными префиксами, градиентами и особыми правами. Найди их все.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">⚡</span>
+          <h3>Стабильность 24/7</h3>
+          <p>Оптимизированное ядро и профессиональный хостинг обеспечивают стабильные 20 TPS даже при высоком онлайне.</p>
         </div>
       </div>
     </div>
 
-    <div class="section">
-      <h2 class="section-title"><span class="deco">◆</span>КАК НАЧАТЬ ИГРАТЬ<span class="deco">◆</span></h2>
-      <div class="steps">
-        <div class="panel step"><span class="n">01</span><span class="ico">📝</span><h4>Регистрация</h4><p>Создай аккаунт на сайте и получи код.</p></div>
-        <div class="panel step"><span class="n">02</span><span class="ico">🎮</span><h4>Подключись</h4><p>Зайди на сервер driver-clicking.gl.joinmc.link:25565</p></div>
-        <div class="panel step"><span class="n">03</span><span class="ico"></span><h4>Привяжи аккаунт</h4><p>Выполни /link &lt;код&gt; на сервере.</p></div>
-        <div class="panel step"><span class="n">04</span><span class="ico">🔮</span><h4>Исследуй</h4><p>Открой мифов и тайны ParaVerX.</p></div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="perks">
-        <div class="panel perk"><span class="ico"></span><h4>Авторизация</h4><p>Надёжная привязка и защита от гриферов.</p></div>
-        <div class="panel perk"><span class="ico"></span><h4>Редкие мифы</h4><p>Особенные сущности со своими силами.</p></div>
-        <div class="panel perk"><span class="ico">️</span><h4>Безопасность</h4><p>2FA проверка входа и анти-бан.</p></div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title"><span class="deco">◆</span>ИСТОРИЯ<span class="deco">◆</span></h2>
-      <div class="panel feature rev">
-        <img class="f-img" src="https://image.qwenlm.ai/public_source/c8f4ab7f-6650-42a8-ad1e-c9273a599f5b/13e0606b6-3206-417f-bcd0-75661fa7ff8e.png" alt="Заброшенные руины">
-        <div class="f-text">
-          <h3>С 2022 года и до наших дней</h3>
-          <p>Проект берёт корни с <strong>2022 года</strong>. В <strong>2024</strong> сервер ушёл в тень — но в <strong>2026</strong> ParaVerX восстал из руин: с новой системой авторизации, обновлённым миром мифов и прежней атмосферой тайны.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title"><span class="deco">◆</span>МИФЫ И МИСТИКА<span class="deco">◆</span></h2>
-      <div class="panel feature">
-        <img class="f-img" src="https://image.qwenlm.ai/public_source/c8f4ab7f-6650-42a8-ad1e-c9273a599f5b/16755b268-92d8-4934-9d36-de55bedbbcd0.png" alt="Мифический персонаж">
-        <div class="f-text">
-          <h3>Будь начеку, путник</h3>
-          <p>На сервере обитает множество мифических персонажей. Среди них есть <strong>особенные, крайне редкие сущности</strong> со скрытыми стилями и способностями. Исследуй мир внимательно — в любой момент из тумана может шагнуть легенда.</p>
-        </div>
-      </div>
+    <div class="section" style="text-align:center;">
+      <h2 style="font-size:2rem; font-weight:700; margin-bottom:16px;">История проекта</h2>
+      <p style="color:var(--text-secondary); max-width:700px; margin:0 auto; font-size:1.05rem; line-height:1.7;">
+        ParaVerX берет свое начало в <strong>2022 году</strong>. Пройдя через этапы становления и временное затишье в 2024 году, 
+        в 2026 мы вернулись с полностью переработанной архитектурой: отказ от устаревших Telegram-ботов в пользу 
+        современного веб-интерфейса, прямая интеграция с базой данных и честная система доната.
+      </p>
     </div>
   </div>
 </main>
 
 <footer class="footer">
   <div class="socials">
-    <a href="#" onclick="return false">💬 DISCORD</a>
-    <a href="#" onclick="return false">✈️ TELEGRAM</a>
-    <a href="#" onclick="return false">🅥 VK</a>
-    <a href="#" onclick="return false">▶ YOUTUBE</a>
+    <a href="#" onclick="return false">Discord</a>
+    <a href="#" onclick="return false">Telegram</a>
+    <a href="#" onclick="return false">YouTube</a>
   </div>
-  <div class="copy">© 2026 PARAVERX • ВСЕ ПРАВА ЗАЩИЩЕНЫ<br>СОЗДАНО С ◆ ДЛЯ ИСКАТЕЛЕЙ МИФОВ</div>
+  <div class="copy">© 2026 ParaVerX. Все права защищены.<br>Создано с ◆ для искателей мифов.</div>
 </footer>
 
 <script src="assets/script.js"></script>
