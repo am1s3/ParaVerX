@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Донат — ParaVerX</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body data-page="donate">
+<div class="particles" id="particles"></div>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="gem">◆</span> ParaVerX</a>
+    <ul class="nav-menu">
+      <li><a href="index.html" data-page="home">Главная</a></li>
+      <li><a href="register.html" data-page="register">Регистрация</a></li>
+      <li><a href="profile.html" data-page="profile">Кабинет</a></li>
+      <li><a href="donate.html" data-page="donate">Донат</a></li>
+      <li><a href="rules.html" data-page="rules">Правила</a></li>
+      <li><a href="admin.html" data-page="admin">Админка</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="form-wrap">
+    <div class="panel form-card" style="max-width:620px">
+      <h2>ПОДДЕРЖАТЬ ПРОЕКТ</h2>
+      <p class="sub">Выбери услугу — проходки, разбан и VIP-привилегии.</p>
+      <div class="tariffs" id="tariffs">
+        <div class="tariff" data-tariff="pass_30" onclick="selectTariff(this)">
+          <span class="t-ico">🌙</span><h4>Проходка 30 дней</h4><div class="price">150 </div>
+          <ul><li>Полный доступ</li><li>Без очередей</li></ul>
+        </div>
+        <div class="tariff" data-tariff="pass_90" onclick="selectTariff(this)">
+          <span class="badge">-15%</span><span class="t-ico"></span><h4>Проходка 90 дней</h4><div class="price">380 ₴</div>
+          <ul><li>Выгоднее на 15%</li><li>Приоритет входа</li></ul>
+        </div>
+        <div class="tariff" data-tariff="unban" onclick="selectTariff(this)">
+          <span class="t-ico"></span><h4>Разбан</h4><div class="price">100 ₴</div>
+          <ul><li>Снятие бана</li><li>Мгновенно</li></ul>
+        </div>
+        <div class="tariff" data-tariff="prefix" onclick="selectTariff(this)">
+          <span class="t-ico">👑</span><h4>VIP префикс</h4><div class="price">250 ₴</div>
+          <ul><li>Префикс [VIP]</li><li>Свет в TAB</li></ul>
+        </div>
+      </div>
+      <div class="field">
+        <label for="donate-nick">Твой никнейм</label>
+        <input type="text" id="donate-nick" placeholder="BruceTheBuilder" autocomplete="off" maxlength="16">
+      </div>
+      <button class="btn full" id="donate-btn" onclick="doDonate()">ПЕРЕЙТИ К ОПЛАТЕ</button>
+      <div class="result" id="donate-result"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="socials">
+    <a href="#" onclick="return false">💬 DISCORD</a>
+    <a href="#" onclick="return false">✈️ TELEGRAM</a>
+    <a href="#" onclick="return false">🅥 VK</a>
+    <a href="#" onclick="return false">▶ YOUTUBE</a>
+  </div>
+  <div class="copy">© 2026 PARAVERX • ВСЕ ПРАВА ЗАЩИЩЕНЫ<br>СОЗДАНО С ◆ ДЛЯ ИСКАТЕЛЕЙ МИФОВ</div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
