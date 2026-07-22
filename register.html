@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Регистрация — ParaVerX</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body data-page="register">
+<div class="particles" id="particles"></div>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="gem">◆</span> ParaVerX</a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="register.html" class="active">Регистрация</a></li>
+      <li><a href="profile.html">Кабинет</a></li>
+      <li><a href="donate.html">Донат</a></li>
+      <li><a href="rules.html">Правила</a></li>
+      <li><a href="admin.html">Админка</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="form-wrap">
+    <div class="form-card">
+      <h2>Регистрация аккаунта</h2>
+      <p class="sub">Введите ваш игровой никнейм, чтобы получить одноразовый код для привязки на сервере.</p>
+      
+      <div class="field">
+        <label for="reg-nick">Игровой никнейм</label>
+        <input type="text" id="reg-nick" placeholder="Например: Steve" autocomplete="off" maxlength="16">
+      </div>
+      
+      <button class="btn btn-primary full" id="reg-btn" onclick="doRegister()">Получить код</button>
+      <div class="result" id="reg-result"></div>
+      
+      <p style="text-align:center; margin-top:24px; font-size:0.85rem; color:var(--text-muted);">
+        Уже есть аккаунт? <a href="profile.html" style="color:var(--accent-primary); text-decoration:none;">Войти в кабинет</a>
+      </p>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="copy">© 2026 ParaVerX. Все права защищены.</div>
+</footer>
+<script src="assets/script.js"></script>
+</body>
+</html>
