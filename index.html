@@ -1,96 +1,15 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ParaVerX — Уникальный Minecraft проект</title>
-<link rel="stylesheet" href="assets/style.css">
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-</head>
-<body data-page="home">
-<div class="particles" id="particles"></div>
-
-<nav class="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="logo"><span class="gem">◆</span> ParaVerX</a>
-    <ul class="nav-menu">
-      <li><a href="index.html" class="active">Главная</a></li>
-      <li><a href="register.html">Регистрация</a></li>
-      <li><a href="profile.html">Кабинет</a></li>
-      <li><a href="donate.html">Донат</a></li>
-      <li><a href="rules.html">Правила</a></li>
-      <li><a href="admin.html">Админка</a></li>
-    </ul>
-  </div>
-</nav>
-
-<main>
-  <div class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-fade"></div>
-    <h1>Мир, где мифы оживают</h1>
-    <p class="tag">ParaVerX — это не просто сервер. Это уникальная экосистема с продвинутой системой авторизации, редкими мифическими сущностями и стабильной работой 24/7.</p>
-    
-    <div class="ip-card">
-      <span class="lbl">Адрес сервера</span>
-      <div class="ip-row">
-        <span class="ip">planning-mongolia.gl.joinmc.link:25565</span>
-        <button class="btn btn-secondary sm" id="copyBtn" onclick="copyIP()">Copy</button>
-      </div>
-      <div class="server-status">
-        <span id="server-status"><span class="dot offline"></span> Загрузка...</span>
-        <span style="color:var(--text-muted)">•</span>
-        <span><strong id="online-count">-</strong> игроков онлайн</span>
-      </div>
-    </div>
-    
-    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
-      <a href="register.html" class="btn btn-primary">Начать играть</a>
-      <a href="donate.html" class="btn btn-secondary">Поддержать проект</a>
-    </div>
-  </div>
-
-  <div class="wrap">
-    <div class="section">
-      <div class="features-grid">
-        <div class="feature-card">
-          <span class="icon">🛡️</span>
-          <h3>Надежная защита</h3>
-          <p>Продвинутая система привязки аккаунтов и двухфакторная аутентификация через сайт. Никаких взломов и гриферства.</p>
-        </div>
-        <div class="feature-card">
-          <span class="icon">👁️</span>
-          <h3>Уникальные мифы</h3>
-          <p>Система скрытых персонажей с кастомными префиксами, градиентами и особыми правами. Найди их все.</p>
-        </div>
-        <div class="feature-card">
-          <span class="icon">⚡</span>
-          <h3>Стабильность 24/7</h3>
-          <p>Оптимизированное ядро и профессиональный хостинг обеспечивают стабильные 20 TPS даже при высоком онлайне.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="section" style="text-align:center;">
-      <h2 style="font-size:2rem; font-weight:700; margin-bottom:16px;">История проекта</h2>
-      <p style="color:var(--text-secondary); max-width:700px; margin:0 auto; font-size:1.05rem; line-height:1.7;">
-        ParaVerX берет свое начало в <strong>2022 году</strong>. Пройдя через этапы становления и временное затишье в 2024 году, 
-        в 2026 мы вернулись с полностью переработанной архитектурой: отказ от устаревших Telegram-ботов в пользу 
-        современного веб-интерфейса, прямая интеграция с базой данных и честная система доната.
-      </p>
-    </div>
-  </div>
-</main>
-
-<footer class="footer">
-  <div class="socials">
-    <a href="#" onclick="return false">Discord</a>
-    <a href="#" onclick="return false">Telegram</a>
-    <a href="#" onclick="return false">YouTube</a>
-  </div>
-  <div class="copy">© 2026 ParaVerX. Все права защищены.<br>Создано с ◆ для искателей мифов.</div>
-</footer>
-
-<script src="assets/script.js"></script>
-</body>
-</html>
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ParaVerX — мир, где мифы оживают</title><link rel="stylesheet" href="assets/style.css"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script></head>
+<body data-page="home"><div class="particles" id="particles"></div>
+<nav class="navbar"><div class="nav-inner"><a href="index.html" class="logo"><span class="gem">◆</span> ParaVerX</a><div id="nav-links" class="nav-menu"></div></div></nav>
+<main><div class="hero"><div class="hero-bg"></div><h1>Мир, где мифы оживают</h1><p class="tag">ParaVerX — уникальная экосистема с продвинутой авторизацией, редкими мифическими сущностями и стабильной работой 24/7.</p>
+<div class="ip-card"><span class="lbl">Адрес сервера</span><div class="ip-row"><span class="ip">planning-mongolia.gl.joinmc.link:25565</span><button class="btn btn-secondary sm" id="copyBtn" onclick="copyIP()">Copy</button></div><div class="server-status"><span id="server-status"><span class="dot offline"></span> Загрузка...</span><span style="margin:0 8px;color:var(--text-muted)">•</span><span><strong id="online-count">-</strong> онлайн</span></div></div>
+<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap"><a href="register.html" class="btn btn-primary">Начать играть</a><a href="donate.html" class="btn btn-secondary">Поддержать проект</a></div></div>
+<div class="wrap"><div class="section"><div class="features-grid">
+<div class="feature-card"><span class="icon">🛡️</span><h3>Надёжная защита</h3><p>Привязка аккаунтов и верификация через сайт. Никаких взломов и гриферства.</p></div>
+<div class="feature-card"><span class="icon">👁️</span><h3>Уникальные мифы</h3><p>Скрытые персонажи с кастомными префиксами, градиентами и особыми правами.</p></div>
+<div class="feature-card"><span class="icon">⚡</span><h3>Стабильность 24/7</h3><p>Оптимизированное ядро и профессиональный хостинг — стабильные 20 TPS.</p></div>
+</div></div>
+<div class="section" style="text-align:center"><h2 style="font-family:Outfit;font-size:2.5rem;font-weight:800;margin-bottom:24px">История проекта</h2><p style="color:var(--text-secondary);max-width:700px;margin:0 auto;font-size:1.1rem;line-height:1.8">ParaVerX берёт начало в <strong style="color:#fff">2022 году</strong>. Пройдя становление и затишье 2024-го, в 2026 мы вернулись с переработанной архитектурой: современный веб-интерфейс вместо устаревших ботов, прямая интеграция с базой и честная система доната.</p></div>
+</div></main>
+<footer class="footer"><div class="socials"><a href="#" onclick="return false">Discord</a><a href="#" onclick="return false">Telegram</a><a href="#" onclick="return false">YouTube</a></div><div class="copy">© 2026 ParaVerX. Все права защищены.<br>Создано с ◆ для искателей мифов.</div></footer>
+<script src="assets/script.js"></script></body></html>
